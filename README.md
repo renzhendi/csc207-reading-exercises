@@ -1,2 +1,4 @@
 # csc207-reading-exercises
-Reading Journal Setup (01/30)
+207-01
+Yimin Wu
+reading exercises
