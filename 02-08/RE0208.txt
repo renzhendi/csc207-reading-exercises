@@ -1,10 +1,17 @@
 Reading Exercise 4.4 & 4.5
 
+WARNING: I have two interpretations of operations to count, and hence two answers which essentially share the same nature.
+
 The relevant input in the max method is the int[] arr because its length directly decides the number of iterations of the for loop. Suppose the length of the array is n.
 
-Now we want to count the number of accesses to the array. Notice that the initialization of ret and the if statement in each iteration of the for loop are fixed, so there are already n array operations. Then we look into ret=arr[i], which may or may not happen.
+Now we want to count the array access inside the if statement, ret=arr[i]. The worst scenario is that the array is arranged in the ascending order, so there are n-1 array operations. The best case is that the maximum shows up as arr[0], so there will be 0 additional array operation. Hence the average performance is (n-1)/2. In this case, we have:
+T_best = 0
+T_worst = n-1
+T_avg = 0.5n-0.5
 
-The worst scenario is that the array is arranged in the ascending order, so there are n-1 array operations. The best case is that the maximum shows up as arr[0], so there will be 0 additional array operation. Hence the average performance is (n-1)/2.
+Note that T_best has O(1), and T_worst and T_avg both have O(n).
+
+My other interpretation is to count the total number of accesses to the array, including the initialization of ret and the if statement in each iteration of the for loop are fixed. These include another n array operations.
 
 Adding the basic n operations, we have the following models of array operations:
 T_best = n
