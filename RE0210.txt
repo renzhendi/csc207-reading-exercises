@@ -1,9 +1,0 @@
-Given T'(n) = 1 + T'(n-2), inductively we have the following:
-
-T'(n) = 1 + T'(n-2)
-      = 2 + T'(n-4)
-      = 3 + T'(n-6)
-      = ...
-      = k + T'(n-2k)
-
-Since T'(0) = 0, the recurrence will end when k = n/2. In this case, we obtain T'(n) = n/2, which still belongs to O(n). That said, subtracting any constant k will not change the O(n) property of this type of recurrence relations, considering n/k is always bounded by O(n). A trivial exception is k = n, where 1 is O(1).
