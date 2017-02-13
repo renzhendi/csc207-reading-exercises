@@ -1,0 +1,7 @@
+At point A, the counter c is reassigned to a new counter, so we have
+Stack        Heap
+-----        ----
+c [ ]-------> Counter
+             value [0]
+
+At point B, c is equal to 2 because it was incremented twice after initialized in the doWork method.
