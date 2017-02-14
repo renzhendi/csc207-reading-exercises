@@ -1,0 +1,7 @@
+1. Entering the loop: When we first enter the loop, we need to choose an initial value for ret. If the array only has length 1, then the first value of the array is the maximum, and hence should be stored in ret before the loop.
+
+2. At the end of iteration of the loop: On the i-th iteration of the loop, we see the ith number of the array compared with the maximum so far. If it is larger than the current ret, we should assign this value into ret and move on. If not, we continue to the next iteration.
+
+3. After execution: By satisfying the two previous rules¡ªpreserving the invariant while entering the loop and on every iteration¡ªwe know that the loop invariant is preserved when the loop exits. Interpreting the loop invariant, we see that the max method will return the maximum in the array.
+
+The given version of the max method failed to comply with the second invariant. It stores the smaller value into ret, and hence will return the minimum of the array.
