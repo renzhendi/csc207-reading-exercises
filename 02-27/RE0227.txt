@@ -1,0 +1,4 @@
+(A) This line will type check, and the output is "C.foo".
+(B) This line will type check, but fails at compilation.
+
+Subtyping is strict and precise. The code rejected by Java's type system will fail at compilation and hence cannot be described as safe.
