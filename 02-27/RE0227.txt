@@ -1,4 +1,4 @@
 (A) This line will type check, and the output is "C.foo".
 (B) This line will not type check; it fails at compilation.
 
-Subtyping is strict and precise. The code rejected by Java's type system will fail at compilation and hence cannot be described as safe.
+Subtyping is an approximation. The code rejected by Java's type system will fail at compilation and hence cannot be described as safe.

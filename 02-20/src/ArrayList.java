@@ -36,8 +36,5 @@ public class ArrayList implements List{
 		}
 		data[validCount++] = v;
 	}
-	
-	public void main(String[] args) {
-		ArrayList testArrLst = new ArrayList();
-	}
+
 }

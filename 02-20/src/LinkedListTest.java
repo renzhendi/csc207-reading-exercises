@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class ListTest {
+public class LinkedListTest {
 
 	@Test
 	public void testLSize() {
