@@ -1,5 +1,5 @@
 
-public class LinkedList {
+public class LinkedList implements List{
 	
 	private static class Node {
 		
@@ -50,7 +50,7 @@ public class LinkedList {
 	
 	public void remove(int index) {
 		Node curNode = firstNode;
-		if (index >= this.size() || index < 0) {
+		if (index >= this.getSize() || index < 0) {
 			throw new IndexOutOfBoundsException("Unavailable Index!");
 		} else if (index == 0) {
 			firstNode = firstNode.nextNode;
@@ -74,7 +74,7 @@ public class LinkedList {
 		return temp.value;
 	}
 	
-	public int size() {
+	public int getSize() {
 		int curSize = 0;
 		Node curNode = firstNode;
 		while (curNode != null) {

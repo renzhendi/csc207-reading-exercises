@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 
-public class ArrayList {
+public class ArrayList implements List{
 	
 	private int[] data;
 	private int validCount;
@@ -21,6 +21,13 @@ public class ArrayList {
 		} else {
 			return data[index];
 		}
+	}
+	
+	public void addFirst(int v) {
+		for (int i = validCount; i > 0; i--) {
+			data[i] = data[i-1];
+		}
+		data[0] = v;
 	}
 	
 	public void addLast(int v) {
