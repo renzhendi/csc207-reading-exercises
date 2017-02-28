@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class LinkedListTest {
+public class LinkedListTest1 {
 
 	@Test
 	public void testLSize() {
@@ -17,7 +17,6 @@ public class LinkedListTest {
 		testSize(l);
 	}
 	
-	@Test
 	public void testSize(List l) {
 		assertEquals(0, l.getSize());
 	}
