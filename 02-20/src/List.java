@@ -1,7 +1,7 @@
 
-public interface List {
-	public void addFirst(int v);
-	public void addLast(int v);
+public interface List<T> {
+	public void addFirst(T v);
+	public void addLast(T v);
 	public int getSize();
-	public int get(int index);
+	public T get(int index);
 }

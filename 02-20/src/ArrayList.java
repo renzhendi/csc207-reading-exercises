@@ -1,13 +1,12 @@
 import java.util.Arrays;
 
-
-public class ArrayList implements List{
+public class ArrayList<T> implements List<T>{
 	
-	private int[] data;
+	private T[] data;
 	private int validCount;
 	
 	public ArrayList() {
-		data = new int[16]; // capacity
+		data = new T[16]; // capacity
 		validCount = 0;
 	}
 	
@@ -15,7 +14,7 @@ public class ArrayList implements List{
 		return validCount;
 	}
 	
-	public int get(int index) {
+	public T get(int index) {
 		if (index >= validCount) {
 			throw new IndexOutOfBoundsException();
 		} else {
@@ -23,14 +22,14 @@ public class ArrayList implements List{
 		}
 	}
 	
-	public void addFirst(int v) {
+	public void addFirst(T v) {
 		for (int i = validCount; i > 0; i--) {
 			data[i] = data[i-1];
 		}
 		data[0] = v;
 	}
 	
-	public void addLast(int v) {
+	public void addLast(T v) {
 		if (data.length <= validCount) {
 			data = Arrays.copyOf(data, data.length*2);
 		}

@@ -1,18 +1,11 @@
 
-public class Node {
+public class Node<T> {
 	
-	// fields
-	public int value;
-	public Node nextNode;
+	public T value;
+	public Node<T> nextNode;
 	
-	// constructors
-	public Node() {
-		value = 0;
-		nextNode = null;
-	}
-	
-	public Node(int thisVal, Node nextPoinnt) {
+	public Node(T thisVal, Node<T> nextPoint) {
 		value = thisVal;
-		nextNode = nextPoinnt;
+		nextNode = nextPoint;
 	}
 }

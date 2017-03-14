@@ -7,17 +7,11 @@ public class LinkedListTest1 {
 
 	@Test
 	public void testLSize() {
-		List l = new LinkedList();
+		List<Integer> l = new LinkedList<>();
 		testSize(l);
 	}
 	
-	@Test
-	public void testASize() {
-		List l = new ArrayList();
-		testSize(l);
-	}
-	
-	public void testSize(List l) {
+	public void testSize(List<Integer> l) {
 		assertEquals(0, l.getSize());
 	}
 }
