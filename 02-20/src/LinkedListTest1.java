@@ -3,11 +3,11 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class LinkedListTest1 {
+public class linkedlistTest1 {
 
 	@Test
 	public void testLSize() {
-		List<Integer> l = new LinkedList<>();
+		List<Integer> l = new linkedlist<>();
 		testSize(l);
 	}
 	

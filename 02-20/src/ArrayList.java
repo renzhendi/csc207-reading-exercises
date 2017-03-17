@@ -1,11 +1,11 @@
 import java.util.Arrays;
 
-public class ArrayList<T> implements List<T>{
+public class arraylist<T> implements List<T>{
 	
 	private T[] data;
 	private int validCount;
 	
-	public ArrayList() {
+	public arraylist() {
 		data = new T[16]; // capacity
 		validCount = 0;
 	}

@@ -1,11 +1,11 @@
 import java.util.Iterator;
 
-public class ArrayListIterator<T> implements Iterator<T> {
+public class arraylistiterator<T> implements Iterator<T> {
 	
-	private ArrayList<T> lst;
+	private arraylist<T> lst;
 	private int index;
 	
-	public ArrayListIterator(ArrayList<T> list) {
+	public arraylistiterator(arraylist<T> list) {
 		this.lst = list;
 		index = 0;
 	}

@@ -1,11 +1,11 @@
 import java.util.Iterator;
 
-public class LinkedListIterator<T> implements Iterator<T> {
+public class linkedlistiterator<T> implements Iterator<T> {
 	
-	public LinkedList<T> lst;
+	public linkedlist<T> lst;
 	public Node<T> cur;
 	
-	public LinkedListIterator<T> (LinkedList<T> list, Node<T> pointer) {
+	public LinkedListIterator<T> (linkedlist<T> list, Node<T> pointer) {
 		this.lst = list;
 		this.cur = pointer;
 	}

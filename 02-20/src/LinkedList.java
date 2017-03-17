@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class LinkedList<T> implements List<T>{
+public class linkedlist<T> implements List<T>{
 	
 	private static class Node<T> {
 		
@@ -18,11 +18,11 @@ public class LinkedList<T> implements List<T>{
 	private Node<T> firstNode;
 
 	// constructors
-	public LinkedList() {
+	public linkedlist() {
 		firstNode = null;
 	}
 	
-	public LinkedList(T firstValue) {
+	public linkedlist(T firstValue) {
 		firstNode = new Node<T>(firstValue, null);
 	}
 	
@@ -132,12 +132,12 @@ public class LinkedList<T> implements List<T>{
 		}
 	}
 	
-	private static class LinkedListIterator<T> implements Iterator<T> {
+	private static class linkedlistiterator<T> implements Iterator<T> {
 		
-		public LinkedList<T> lst;
+		public linkedlist<T> lst;
 		public Node<T> cur;
 		
-		public LinkedListIterator<T> (LinkedList<T> list, Node<T> pointer) {
+		public linkedlistiterator<T> (linkedlist<T> list, Node<T> pointer) {
 			this.lst = list;
 			this.cur = pointer;
 		}
@@ -160,11 +160,11 @@ public class LinkedList<T> implements List<T>{
 	}
 	
 	public Iterator iterator() {
-		return new LinkedListIterator<>(firstNode);
+		return new linkedlistiterator<>(firstNode);
 	}
 	// main method test
 	public static void main (String[] args) {
-		LinkedList<Integer> test = new LinkedList<>();
+		linkedlist<Integer> test = new linkedlist<>();
 		test.addFirst(3);
 		test.addLast(1);
 		test.addLast(3);
